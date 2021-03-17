@@ -23,6 +23,7 @@ impl<O> Commit<O>
 where
     O: TransformableOperation,
 {
+    /// Constructs a new commit on a given base [`CommitData`]
     pub fn on(base: &CommitableData<O::Operand>, operation: O) -> Commit<O> {
         Commit {
             issue: base.issue,

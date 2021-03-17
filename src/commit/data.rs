@@ -12,6 +12,7 @@ pub struct CommitableData<T> {
 }
 
 impl<T> CommitableData<T> {
+    /// Creates a new instance of commitable data, with randomly initialised `issue` and `last_commit`.
     pub fn new(data: T) -> CommitableData<T> {
         CommitableData {
             data,
